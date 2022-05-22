@@ -1,13 +1,13 @@
 {
-  "name": "@architect/functions",
+  "name": "arc-functions",
   "version": "5.1.0",
-  "description": "Cloud function signatures for HTTP handlers, pub/sub + scheduled, queued functions, table triggers, and more",
+  "description": "Fork of @architect/functions",
   "homepage": "https://github.com/architect/functions",
   "repository": {
     "type": "git",
-    "url": "https://github.com/architect/functions"
+    "url": "https://github.com/frankleng/arc-functions"
   },
-  "bugs": "https://github.com/architect/functions/issues",
+  "bugs": "https://github.com/frankleng/arc-functions/issues",
   "main": "src/index",
   "scripts": {
     "lint": "eslint --fix .",
@@ -18,9 +18,9 @@
     "rc": "npm version prerelease --preid RC"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
-  "author": "Brian LeRoux <b@brian.io>",
+  "author": "Frank Leng <email@frankleng.me>",
   "license": "Apache-2.0",
   "dependencies": {
     "cookie": "^0.4.2",

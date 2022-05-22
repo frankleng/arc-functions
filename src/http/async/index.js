@@ -29,7 +29,9 @@ module.exports = function httpAsync (...fns) {
         first = false
         let session = await read(request)
         let req = interpolate(Object.assign(request, { session }))
-        req.body = bodyParser(req)
+        if ([ 'PUT', 'POST', 'PATCH' ].includes((req.httpMethod || '').toUpperCase())) {
+          req.body = bodyParser(req)
+        }
         request = req
       }
       // Run the function
